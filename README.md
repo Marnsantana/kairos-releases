@@ -9,10 +9,11 @@ sola. No contiene el código fuente ni ningún dato de usuarios.
 
 ## Descargar
 
-> **Estado: todavía no hay ninguna versión pública.** La primera aparecerá en
-> [Releases](../../releases) cuando esté lista. Hasta entonces, no hay nada que descargar aquí.
+> **Fase piloto.** KAIROS se comparte gratuitamente con un grupo reducido de entrenadores de confianza. Todavía no hay una
+> versión estable pública: las versiones que aparecen en [Releases](../../releases) marcadas como **«Pre-release»** son
+> **candidatas de prueba**. Si no te las ha indicado expresamente quien te facilitó KAIROS, espera a la versión estable.
 
-Cuando exista, descarga siempre desde la página de [Releases](../../releases) **la versión marcada como «Latest»**:
+Cuando haya una versión estable, descárgala siempre desde la página de [Releases](../../releases): **la marcada como «Latest»**.
 
 | Archivo | Para qué sirve |
 |---|---|
