@@ -1,0 +1,8 @@
+# Este repositorio solo contiene archivos de distribución publicados por la automatización del repositorio privado.
+# Nunca subir aquí código fuente, bases de datos, vídeos ni claves.
+*.db
+*.mp4
+*.mov
+*.key
+*.b64
+*.pem

@@ -1,0 +1,30 @@
+KAIROS · avisos de licencias de terceros
+==========================================
+
+KAIROS incluye los siguientes componentes de terceros. Cada uno conserva su licencia; el texto completo está en las
+carpetas indicadas y en los enlaces. Para obtener el código fuente de los componentes LGPL, o sustituirlos por otra
+versión (KAIROS los carga como archivos independientes, sin enlazarlos de forma estática), usa los enlaces.
+
+VLC / libVLC 3.0.x  (carpeta vendor\vlc)
+  Licencia: LGPL 2.1 o posterior (libvlc, libvlccore). Algunos módulos de plugins\ pueden tener otras licencias
+  compatibles; ver vendor\vlc\COPYING.txt.
+  Binarios y código fuente: https://download.videolan.org/pub/videolan/vlc/
+  (ver vendor\vlc\ORIGEN.txt para la versión exacta incluida)
+
+FFmpeg (ffmpeg.exe, ffprobe.exe)  (carpeta vendor\ffmpeg)
+  Compilación LGPL (sin componentes GPL como x264 o x265), de BtbN.
+  Licencia: LGPL 2.1 o posterior (vendor\ffmpeg\LICENSE.txt).
+  Código fuente: https://ffmpeg.org/download.html y https://github.com/BtbN/FFmpeg-Builds
+  Se ejecuta como programa aparte; no está enlazado con KAIROS. (vendor\ffmpeg\ORIGEN.txt indica la versión exacta.)
+
+Qt for Python (PySide6, Qt 6)
+  Licencia: LGPL 3.0. https://doc.qt.io/qtforpython-6/ · https://www.qt.io/download-open-source
+  Las bibliotecas de Qt están en la carpeta _internal y se pueden sustituir.
+
+Python (intérprete incluido) · Licencia PSF · https://www.python.org/
+python-vlc · LGPL 2.1 o posterior · https://github.com/oaubert/python-vlc
+cryptography · Apache 2.0 o BSD · https://github.com/pyca/cryptography  (verifica las firmas de las actualizaciones)
+Atkinson Hyperlegible · SIL Open Font License 1.1 · _internal\basket_analisis\resources\fonts\OFL.txt
+
+KAIROS no recopila ni envía datos personales. Solo se conecta a Internet, y únicamente si lo permites, para
+(1) buscar actualizaciones en GitHub y (2) sincronizar tus metadatos con tu propio Google Drive.
