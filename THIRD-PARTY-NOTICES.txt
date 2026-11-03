@@ -6,10 +6,24 @@ carpetas indicadas y en los enlaces. Para obtener el código fuente de los compo
 versión (KAIROS los carga como archivos independientes, sin enlazarlos de forma estática), usa los enlaces.
 
 VLC / libVLC 3.0.x  (carpeta vendor\vlc)
+  Se han retirado de este paquete los módulos de VLC de licencia GPL que KAIROS no usa (lista en
+  vendor\vlc\MODULOS-RETIRADOS.txt).
   Licencia: LGPL 2.1 o posterior (libvlc, libvlccore). Algunos módulos de plugins\ pueden tener otras licencias
   compatibles; ver vendor\vlc\COPYING.txt.
   Binarios y código fuente: https://download.videolan.org/pub/videolan/vlc/
   (ver vendor\vlc\ORIGEN.txt para la versión exacta incluida)
+
+  libavcodec_plugin y libswscale_plugin de VLC incluyen FFmpeg 8.1.2 compilado en modo LGPL (sin --enable-gpl),
+  libgsm (licencia permisiva de la TU Berlin: © Jutta Degener y Carsten Bormann) y OpenJPEG (BSD de 2 cláusulas).
+  VLC integra además otras bibliotecas libres (libass, FreeType, HarfBuzz, FriBidi, libpng, libjpeg, zlib, Opus, Vorbis,
+  FLAC, Ogg, Theora, Speex, dav1d, libvpx, GnuTLS/Nettle, libbluray, TagLib…) bajo sus licencias; su relación y fuentes están
+  en contrib/src/*/rules.mak del código fuente de VLC.
+  Inventario automático de las bibliotecas incluidas en los plugins: vendor\vlc\AVISOS-LIBRERIAS.txt.
+  Portions of this software are copyright © The FreeType Project (www.freetype.org). All rights reserved.
+  Código fuente de VLC 3.0.24 (SHA-256 e7cab503…5fdf): https://download.videolan.org/pub/videolan/vlc/3.0.24/vlc-3.0.24.tar.xz
+  Código fuente de FFmpeg 8.1.2: https://ffmpeg.org/releases/ffmpeg-8.1.2.tar.xz
+  Oferta de código fuente: si no puedes descargarlo de esos enlaces, abre una incidencia en
+  https://github.com/Marnsantana/kairos-releases/issues y se te facilitará durante al menos tres años desde la distribución.
 
 FFmpeg (ffmpeg.exe, ffprobe.exe)  (carpeta vendor\ffmpeg)
   Compilación LGPL (sin componentes GPL como x264 o x265), de BtbN.
