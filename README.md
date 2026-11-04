@@ -9,21 +9,25 @@ sola. No contiene el código fuente ni ningún dato de usuarios.
 
 ## Descargar
 
-> **Fase piloto.** KAIROS se comparte gratuitamente con un grupo reducido de entrenadores de confianza. Todavía no hay una
-> versión estable pública: las versiones que aparecen en [Releases](../../releases) marcadas como **«Pre-release»** son
-> **candidatas de prueba**. Si no te las ha indicado expresamente quien te facilitó KAIROS, espera a la versión estable.
+**⬇️ [Descargar KAIROS para Windows](https://github.com/Marnsantana/kairos-releases/releases/latest/download/KAIROS-Setup.exe)**
 
-Cuando haya una versión estable, descárgala siempre desde la página de [Releases](../../releases): **la marcada como «Latest»**.
+Última versión estable · Windows 10/11 de 64 bits.
+
+[Ver novedades de la última versión](https://github.com/Marnsantana/kairos-releases/releases/latest).
+Las versiones de prueba y las versiones anteriores se conservan en privado.
+
+> **Fase piloto.** KAIROS se comparte gratuitamente con un grupo reducido de entrenadores de confianza.
 
 | Archivo | Para qué sirve |
 |---|---|
-| `KAIROS-Setup-X.Y.Z.exe` | **El instalador. Es lo único que necesitas.** |
+| `KAIROS-Setup.exe` | **El instalador. Es lo único que necesitas.** |
+| `KAIROS-Setup-X.Y.Z.exe` | La misma descarga con el número de versión; la usa el actualizador |
 | `KAIROS-Setup-X.Y.Z.exe.sha256` | Suma de comprobación para verificar la descarga (opcional) |
 | `update-manifest.json` y `update-manifest.json.sig` | Los usa KAIROS para actualizarse con seguridad; no hace falta abrirlos |
 
 ## Instalar (3 pasos)
 
-1. Descarga y ejecuta `KAIROS-Setup-X.Y.Z.exe`. **No necesita permisos de administrador** y no hay que instalar nada más
+1. Descarga y ejecuta `KAIROS-Setup.exe`. **No necesita permisos de administrador** y no hay que instalar nada más
    (Python, VLC y FFmpeg ya van incluidos).
 2. Sigue el asistente (puedes crear un acceso directo en el escritorio).
 3. Abre **KAIROS** desde el menú Inicio y empieza a trabajar.
@@ -32,10 +36,11 @@ Requisitos: Windows 10 u 11 de 64 bits.
 
 **Aviso de Windows (SmartScreen).** De momento el instalador no lleva firma de Microsoft, así que la primera vez Windows
 puede mostrar «Windows protegió su PC». Pulsa **Más información → Ejecutar de todas formas**. Si quieres comprobar que el
-archivo es el original, compara su SHA-256 con el del archivo `.sha256` de la misma versión:
+archivo es el original, compara su SHA-256 con el del archivo `.sha256` de la misma versión
+(el instalador de nombre fijo y el versionado son idénticos):
 
 ```powershell
-Get-FileHash .\KAIROS-Setup-X.Y.Z.exe -Algorithm SHA256
+Get-FileHash .\KAIROS-Setup.exe -Algorithm SHA256
 ```
 
 ## Actualizaciones
